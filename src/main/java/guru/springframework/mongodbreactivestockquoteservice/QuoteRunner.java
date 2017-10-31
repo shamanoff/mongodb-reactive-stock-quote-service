@@ -13,7 +13,6 @@ import reactor.core.publisher.Flux;
  */
 @Component
 public class QuoteRunner implements CommandLineRunner {
-
     private final StockQuoteClient stockQuoteClient;
     private final QuoteRepository repository;
 
@@ -21,7 +20,6 @@ public class QuoteRunner implements CommandLineRunner {
         this.stockQuoteClient = stockQuoteClient;
         this.repository = repository;
     }
-
     @Override
     public void run(String... args) throws Exception {
 
